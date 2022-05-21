@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'debian' } }
+    agent { docker { run '-it -d --network host --name fromjenkins debina' } }
     stages {
         stage('build') {
           steps {
