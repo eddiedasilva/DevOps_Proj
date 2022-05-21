@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'apache2' } }
+    agent { docker { image 'http' } }
     stages {
         stage('build') {
           steps {
