@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { run '-it -d --network host --name fromjenkins debina' } }
+    agent { docker { run 'apache2' } }
     stages {
         stage('build') {
           steps {
