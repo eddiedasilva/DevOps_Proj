@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'foodtrucks-web' } }
+    agent { docker { image 'http' } }
     stages {
         stage('build') {
           steps {
