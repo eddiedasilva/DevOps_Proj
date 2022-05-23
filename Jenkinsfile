@@ -11,7 +11,7 @@
 // Declarative //
 pipeline {
  # agent any
-  { docker { image 'httpd' } }
+  agent { docker { image 'httpd' } }
   stages {
   stage('Build') {
   steps {
