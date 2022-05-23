@@ -6,10 +6,11 @@ ipeline {
                 sh 'echo "testing"'
             }
         }
-      }
+      
        stage('Test') {
   	  steps {
   		echo 'Testing..'
   		}	
-  }
+  	}
+   }		
 }
