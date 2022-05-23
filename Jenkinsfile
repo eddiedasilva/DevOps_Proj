@@ -2,10 +2,10 @@
 pipeline {
  agent { docker { image 'httpd' } }
 
- stages {
-  	stage('Build') {
-  		steps {
-  			echo 'Building..'
+ 	stages {
+  		stage('Build') {
+  			steps {
+  				echo 'Building..'
   			}	
   		}
   	stage('Test') {
