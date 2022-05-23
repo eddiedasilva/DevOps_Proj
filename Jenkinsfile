@@ -1,8 +1,8 @@
 // Declarative //
 pipeline {
-  agent { docker { image 'httpd' } }
+ agent { docker { image 'httpd' } }
 
-  stages {
+ stages {
   	stage('Build') {
   		steps {
   			echo 'Building..'
