@@ -8,7 +8,7 @@ ipeline {
         }
       }
        stage('Test') {
-  	steps {
+  	  steps {
   		echo 'Testing..'
   		}	
   }
