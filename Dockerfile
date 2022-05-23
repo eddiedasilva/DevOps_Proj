@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM nginx:latest
 
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
 
