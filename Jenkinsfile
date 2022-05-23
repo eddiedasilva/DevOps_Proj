@@ -1,4 +1,5 @@
-ipeline {
+#!/usr/bin/env groovy
+pipeline {
     agent { docker { image 'httpd' } }
     stages {
         stage('build') {
