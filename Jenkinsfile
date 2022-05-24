@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
           steps {
                 sh 'echo "building"'
-                sh 'docker "run -it -d --network host --name mytestpage httpd"'
+                sh '/usr/bin/docker/docker "run -it -d --network host --name mytestpage httpd"'
             }
         }
         stage('test') {
