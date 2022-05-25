@@ -5,7 +5,7 @@ pipeline {
     stage('Docker Build') {
       agent any
       steps {
-        sh 'docker run -it -d --network host --name testwebpag httpd'
+        sh 'docker run -it -d --network host --name testwebpage1 httpd'
       }
     }
   }
