@@ -12,7 +12,6 @@ pipeline {
                 sh '
                    git --version
                    curl --version
-                   node --version
                 '
             }
         }
