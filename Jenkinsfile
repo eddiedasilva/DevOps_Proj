@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 pipeline {
-    agent { dockerfile {True  } }
+    agent { docker { image 'httpd' } }
     stages {
         stage('build') {
           steps {
@@ -9,12 +9,9 @@ pipeline {
         }
         stage('test') {
           steps {
-                sh '
-                   git --version
-                   curl --version
-                '
+                sh 'echo "testing"'
             }
         }
-
-   }
+      
+   }		
 }
