@@ -9,11 +9,11 @@ pipeline {
         }
         stage('test') {
           steps {
-                sh 'echo "testing"
+                sh '''
                    node --version
                    git --version
                    curl --version
-                '
+                '''
             }
         }
       
